@@ -1,0 +1,46 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+venv/
+.venv/
+env/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Data & model artifacts (không commit lên GitHub) ---
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npy
+*.npz
+*.csv
+*.dcm
+
+# --- Env & secrets ---
+.env
+*.env.local
+configs/local_*.yaml
+
+# --- Logs & experiment tracking (mỗi run tự tạo thư mục riêng, không commit) ---
+logs/
+runs/
+mlruns/
+wandb/
+outputs/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

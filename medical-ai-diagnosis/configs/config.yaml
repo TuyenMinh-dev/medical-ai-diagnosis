@@ -1,0 +1,26 @@
+project_name: medical-ai-diagnosis
+seed: 42
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  image_size: 224
+  batch_size: 32
+  num_workers: 4
+  val_split: 0.2
+
+model:
+  name: resnet50          # tên kiến trúc, đổi tùy nhóm chọn (resnet50, efficientnet_b0, ...)
+  pretrained: true
+  num_classes: 2           # đổi theo số lớp bệnh lý cần phân loại
+
+training:
+  epochs: 30
+  learning_rate: 0.0001
+  optimizer: adam
+  weight_decay: 0.00001
+  early_stopping_patience: 5
+
+output:
+  checkpoint_dir: outputs/checkpoints
+  log_dir: outputs/logs

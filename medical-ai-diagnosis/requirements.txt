@@ -1,0 +1,38 @@
+# Core
+numpy
+pandas
+scikit-learn
+pyyaml
+
+# Deep Learning
+torch
+torchvision
+# tensorflow  # bỏ comment nếu nhóm dùng TensorFlow/Keras thay vì PyTorch
+
+# Image processing
+opencv-python
+Pillow
+albumentations
+
+# Experiment tracking / visualization
+matplotlib
+tensorboard
+
+# Backend API
+fastapi
+uvicorn[standard]
+python-multipart
+
+# UI prototype (tháng 7)
+streamlit
+requests
+
+# Tải dữ liệu (tháng 3, tùy nguồn nhóm chọn)
+# kaggle
+datasets
+
+# Testing
+pytest
+
+# Utils
+tqdm
